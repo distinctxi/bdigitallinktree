@@ -1,0 +1,163 @@
+body{
+    background-color: #ecf0f1;
+}
+
+a{
+    font-size: 24pt;
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-container{
+    min-height: 100vh;
+    background-color: #ecf0f1;
+    display: flex;
+}
+
+.home-links{
+    font-size: 24pt;
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-text{
+    text-align: center;
+    margin: auto;
+    left: 40vw;
+    position: absolute;
+    right: 50%;
+}
+
+.navigation{
+    vertical-align: middle;
+    font-size: 24pt;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-bottom: 10%;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.left-column{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.home-icon{
+    color:black;
+    font-size: 24pt;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+.right-column{
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding:2%;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text-container{
+    padding:15%;
+    text-align: center;
+}
+
+.text-header{
+    margin-bottom: 5%;
+}
+
+.form-header{
+    text-align: left;
+}
+
+.form-header-mobile{
+    text-align: center;
+    display: none;
+}
+
+.form-header-title{
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+
+.form-caption-text{
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+
+.sign-up-button{
+    padding: 9px 25px;
+    width: 75%;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #d9d9d9;
+    text-align: center;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.submit{
+    color:#ecf0f1;
+    background-color: rgb(54, 170, 0,1.0);
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    padding: 9px 25px;
+    transition: all 0.2s ease 0s;
+    cursor:pointer;
+}
+
+.submit:hover{
+    background-color: rgb(54, 170, 0,0.6);
+}
+
+@media screen and (max-width: 600px){
+    .page-container{
+        flex-direction: column;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .left-column{
+        display: none;
+    }
+
+    .right-column{
+        align-items: unset;
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        justify-content: space-around;
+    }
+    
+    .form-header{
+        display: none;
+    }
+
+    .form-header-mobile{
+        display: block;
+    }
+
+    .sign-up-button{
+        width: 100%;
+        margin-bottom: 30%;
+    }
+}

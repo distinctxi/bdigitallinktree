@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style/styles.css">
+<link rel="stylesheet" href="style/pricing.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <!-- Navbar content -->
+    <nav class="navbar" id="navbar">
+        <img class="logo" src="logo.svg">
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Links</a></li>
+            <li><a href="product.html" target="_blank">Profile</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a class="sign-in" href="signin.html">Sign In</a><li>
+            <li><a href="javascript:void" onclick="openNav()" class="icon"><i class='bx bx-menu mobile-menu'></i></a></li>
+        </ul>
+    </nav>
+<!-- Mobile Navbar-->
+    <div class="mobnavbar" id="mobnavbar">
+        <ul class="nav-links mobile" id="nav-links">
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="product.html" target="_blank">Profile</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a class="sign-in" href="signin.html">Sign In</a><li>
+        </ul>
+    </div>
+
+<div class="pricing-details">
+    <div class="price-plan-container">
+    <div class="columns">
+        <ul class="price">
+            <li class="header">Basic</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li>$ 9.99 / year</li>
+            <li><button type="button" id="myBtn" class="pricebutton">More Info</button></li>
+        </ul> 
+    </div>
+
+    <div class="columns">
+        <ul class="price">
+            <li class="header">Pro</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li>$ 19.99 / year</li>
+            <li><button type="button" id="myBtn2" class="pricebutton">More Info</button></li>
+        </ul> 
+    </div>
+
+    <div class="columns">
+        <ul class="price">
+            <li class="header">Advance</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li>$ 29.99 / year</li>
+            <li><button type="button" id="myBtn3" class="pricebutton">More Info</button></li>
+        </ul> 
+    </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="container-title">
+        <div class="cont-header">    
+            <h2>Basic</h2>
+        </div>
+        <div class="cont-button"><span class="close">&times;</span></div>
+        </div>
+        <ul class="price">
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li>$ 9.99 / year</li>
+            <li><button type="button" id="myBtn" class="pricebutton">More Info</button></li>
+        </ul> 
+    </div>
+
+</div>
+
+
+
+<div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="container-title">
+        <div class="cont-header">    
+            <h2>Pro</h2>
+        </div>
+        <div class="cont-button"><span class="close">&times;</span></div>
+        </div>
+        <ul class="price">
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li>$ 19.99 / year</li>
+            <li><button type="button" id="myBtn" class="pricebutton">More Info</button></li>
+        </ul> 
+    </div>
+
+</div>
+
+<div id="myModal3" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="container-title">
+        <div class="cont-header">    
+            <h2>Advance</h2>
+        </div>
+        <div class="cont-button"><span class="close">&times;</span></div>
+        </div>
+        <ul class="price">
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li> lorem ipsum</li>
+            <li>$ 29.99 / year</li>
+            <li><button type="button" id="myBtn" class="pricebutton">More Info</button></li>
+        </ul> 
+    </div>
+
+</div>
+
+<script src="modal.js"></script>
+<script src="scripts/responsivemenu.js"></script>
+</body>
+</html>
